@@ -67,10 +67,16 @@ This project simulates a **real-time dynamic pricing system** for urban parking 
 
 ## 🛠 Technologies Used
 
-- Python
-- Pandas, NumPy
-- Pathway (for real-time computation)
-- Bokeh (for visualization)
+- Programming - Python 3.11
+- Data Handling - Pandas, NumPy
+- Real-Time Engine - Pathway
+- Visualization - Bokeh
+- Mapping & Distance - Haversine Formula
+- Environment - Google Colab
+
++------------------------+ | Dataset (CSV Format) | +------------------------+ | v +------------------------+ | Preprocessing Layer | <- Clean traffic strings, map vehicle weights +------------------------+ | v +------------------------+ | Real-Time Ingestion | | Pathway CSV Reader | +------------------------+ | v +------------------------+ | Pathway Logic | | - Compute OccupancyRate| | - Map VehicleType | | - Demand Calculation | | - Price Derivation | +------------------------+ | v +------------------------+ | Stream Output Writer | | JSONL Output File | +------------------------+ | v +------------------------+ | Bokeh Visualization | | - Line plots per lot | | - Price comparisons
+
+
 
 ---
 
